@@ -130,14 +130,22 @@ a {
   border-bottom: 1px solid #eee;
 }
 
+/* Dropbox  */
 
-/* Dropbox */
 
 #dropbox-logo {
-    display: flex;
-    width: 200px;   
-    height: 20px;
-    align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#dropbox-logo img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 #layout1 .hero {
@@ -209,25 +217,13 @@ a {
   border-radius: 10px;
 }
 
-/*display: inline-block;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
 
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
+/* Figma  */
 
-/* Figma */
-
-#layout2 .nav__logo--figma {
-  font-size: 28px;
-  color: #f24e1e;
+.figma-logo-img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
 }
 
 #layout2 .hero {
@@ -291,7 +287,15 @@ a {
 }
 
 
-/* Github */
+/* Github  */
+
+.github-logo-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: invert(1);
+}
+
 #layout3 .nav--github {
   background: #0d1117;
   color: #e6edf3;
@@ -350,7 +354,7 @@ a {
 }
 
 
-/* AppleTv */
+/* AppleTv / Netflix  */
 
 #layout4 .nav--apptv {
   background: #141414;
@@ -406,23 +410,14 @@ a {
   user-select: none;
 }
 
-#layout4 .trending-card {
+#layout4 .trending-card-img {
   width: 130px;
   height: 190px;
-  background: #333;
-  border: 2px solid #555;
+  object-fit: cover;
   border-radius: 4px;
   z-index: 2;
   position: relative;
-}
-
-#onepiececard {
-  position: absolute;
-  width: 126px;
-  height: 186px;
-  z-index: 100;
-  left: 43px;
-  bottom: 2px;
+  border: 2px solid #555;
 }
 
 #layout4 .apptv-reasons {
@@ -461,7 +456,8 @@ a {
 }
 
 
-/* Notícia */
+/* Notícias  */
+
 #layout5 .news-list {
   max-width: 680px;
   margin: 0 auto;
@@ -481,9 +477,9 @@ a {
   width: 160px;
   height: 110px;
   flex-shrink: 0;
-  background: #ccc;
-  border: 2px solid #aaa;
+  object-fit: cover;
   border-radius: 4px;
+  border: 2px solid #aaa;
 }
 
 #layout5 .news-body {
@@ -516,7 +512,7 @@ a {
 }
 
 
-/* Dribbble */
+/* Dribbble  */
 
 #layout6 .dribbble-search {
   width: 220px;
@@ -587,17 +583,10 @@ a {
 #layout6 .shot-img {
   width: 100%;
   height: 200px;
+  object-fit: cover;
+  display: block;
   border-bottom: 1px solid #eee;
 }
-
-#layout6 .shot-img--1 { background: #e8d5a0; }
-#layout6 .shot-img--2 { background: #d8e8d0; }
-#layout6 .shot-img--3 { background: #3a6060; }
-#layout6 .shot-img--4 { background: #111; }
-#layout6 .shot-img--5 { background: #6030a8; }
-#layout6 .shot-img--6 { background: #f0a060; }
-#layout6 .shot-img--7 { background: #101010; }
-#layout6 .shot-img--8 { background: #b0b8c8; }
 
 #layout6 .shot-meta {
   display: flex;
